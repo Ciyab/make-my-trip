@@ -8,7 +8,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import bookMyTrip.bookTickets.base.Base;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+/**
+ * 
+ * @author Bonciya
+ *
+ */
 public class Browser extends Base{
 	public static void configBrowser(String browser) {
 

@@ -2,7 +2,11 @@ package bookMyTrip.bookTickets.pages;
 
 import bookMyTrip.bookTickets.base.Base;
 import bookMyTrip.bookTickets.utils.CommonMethods;
-
+/**
+ * 
+ * @author Bonciya
+ *
+ */
 public class BookMyTripPage extends Base {
 	public static String fromCity="//label[@class='lbl_input makeFlex column latoBold']";
 	public static String fromCitySearch="(//span[@class='sr_city blackText'])[3]";
@@ -11,6 +15,10 @@ public class BookMyTripPage extends Base {
 	public static String SearchButton1="//button[@id='search_button']";
 	public static String Bookmytrip="//label[@class='lbl_input makeFlex column latoBold']";
 	
+	/**
+	 * This method does operations in bookmytrip page
+	 * @throws Exception
+	 */
 	public static void book1() throws Exception	
 	{
 		CommonMethods.validatePage("xpath", Bookmytrip," Bookmytrip");

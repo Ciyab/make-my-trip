@@ -2,7 +2,11 @@ package bookMyTrip.bookTickets.pages;
 
 import bookMyTrip.bookTickets.base.Base;
 import bookMyTrip.bookTickets.utils.CommonMethods;
-
+/**
+ * 
+ * @author Bonciya
+ *
+ */
 public class LoginPage extends Base{
 	public static String Login="//div[@class='page-section sticky-scroll topSection appendBottom40']";
 	public static String loginOption="//div[@class='login__card makeFlex hrtlCenter cursorPointer appendBottom10']";
@@ -11,7 +15,10 @@ public class LoginPage extends Base{
 	public static String password="//input[@id='password']";
 	public static String LoginButton="//button[@class='capText font16']";
 	public static String popup1="//span[@class='crossIcon popupSprite popupCrossIcon']";
-	
+	/**
+	 * This method is used to fill the details in the loginPage
+	 * @throws Exception
+	 */
 	public static void loginPage0() throws Exception	
 	{
 		CommonMethods.validatePage("xpath", Login, "Login");
