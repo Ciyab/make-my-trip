@@ -1,9 +1,8 @@
 package bookMyTrip.bookTickets.base;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import bookMyTrip.bookTickets.utils.Browser;
 
 /**
@@ -14,12 +13,12 @@ import bookMyTrip.bookTickets.utils.Browser;
 public class Base {
 	public static WebDriver driver;
 
-	@BeforeTest
+	@BeforeClass
 	public static void invokeBrowser() throws InterruptedException {
 		Browser.invokeBrowser();
 	}
 
-	@AfterTest
+	@AfterClass
 	public static void closeBrowser() {
 
 		driver.quit();
